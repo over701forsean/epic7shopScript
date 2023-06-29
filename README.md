@@ -2,7 +2,7 @@
 第七史诗刷商店脚本，前台python图像识别，随机范围坐标点击防检测
 
 编写环境：
-Win11 BlueStacks 国际版 ; 显示器分辨率 2560*1600 ；模拟器分辨率 1920*1080（开全屏） ；第七史诗国服
+Win11 BlueStacks 国际版 ; 显示器分辨率 2560×1600 ；模拟器分辨率 1920×1080（开全屏） ；第七史诗国服
 
 参照https://github.com/dengpris/E7-Secret-Shop-Auto-Refresher
 
