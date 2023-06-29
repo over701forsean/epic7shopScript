@@ -36,7 +36,9 @@ def buy(bookmark):
     click(pos_point[0]+1100+rand_x, pos_point[1]+40+rand_y)
     click(pos_point[0]+1100+rand_x, pos_point[1]+40+rand_y)
     time.sleep(random.uniform(0.5, 0.7)) #wait for confirm button
-    pyautogui.click(x=1415,y=1079,duration=2)
+    pos_x,pos_y = pyautogui.locateCenterOnScreen('confirm_button.png', confidence=0.8)
+    click(pos_x+rand_x,pos_y+rand_y)
+    # pyautogui.click(x=1415,y=1079,duration=0.8)  # 确认的坐标是固定的，可以自行获取坐标以用该行代码替换图像识别
 
     #Confirm buy
     timeout_start = time.time() 
@@ -51,7 +53,9 @@ def buy(bookmark):
             Buy_button_point=pyautogui.center(Buy_button_pos)
             click(Buy_button_point[0]+rand_x, Buy_button_point[1]+rand_y)
             click(Buy_button_point[0]+rand_x, Buy_button_point[1]+rand_y)
-            pyautogui.click(x=1415, y=1079, duration=2)
+            pos_x, pos_y = pyautogui.locateCenterOnScreen('confirm_button.png', confidence=0.8)
+            click(pos_x + rand_x, pos_y + rand_y)
+            # pyautogui.click(x=1415, y=1079, duration=0.8) # 确认的坐标是固定的，可以自行获取坐标以用该行代码替换图像识别
 
             bought = True
             break
